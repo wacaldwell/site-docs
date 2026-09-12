@@ -2,3 +2,14 @@ _site/
 .jekyll-cache/
 .DS_Store
 Gemfile.lock
+
+# Sensitive (never commit)
+.env
+.env.*
+.mcp-credentials.env
+secure/
+keypairs/
+
+# Re-asserted below the entries above, which would otherwise match
+# these paths — git applies the LAST matching pattern.
+!.env.example
